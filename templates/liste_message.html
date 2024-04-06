@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tous les messages partagés</title>
+    <style>
+        td{
+            height: 50px;
+        }
+    </style>
+</head>
+<body style="background-color: rgb(109, 28, 14); color: aliceblue;">
+    <h1>tous les messages disponibles</h1>
+    <h2><a al href="/appel">ecrire un nouveu message</a></h2>
+     
+    {% for message in element %}
+    <div>
+        <h2></h2>
+        {{ message[0] }}
+       <em> {{ message[3]}}</em>
+    </div>
+    
+        {% endfor %}
+    
+</body>
+</html>
